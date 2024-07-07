@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio - Contact Me</title>
+    <link rel="stylesheet" href="contact.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: burlywood;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            justify-content: center;
+        }
+
+        nav {
+            background: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+            padding: 16px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        nav a {
+            color: #fff; /* White text */
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            color: #000;
+            text-decoration: underline;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Full viewport height */
+            width: 100%;
+            text-align: center;
+            padding-top: 70px; /* Height of the navbar */
+        }
+
+        .content {
+            background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        form a {
+            display: block;
+            margin: 10px 0;
+            color: black;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        form a:hover {
+            color: blue;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <a href="index.html"><i class='bx bxs-user'></i>Home</a>
+            <a href="edu.html"><i class='bx bxs-graduation'></i>Education</a>
+            <a href="skills.html"><i class='bx bx-line-chart'></i>Skills</a>
+            <a href="project.html"><i class='bx bx-laptop'></i>Projects</a>
+            <a href="contact.html"><i class='bx bxs-contact'></i>Contact Me</a>
+        </div>
+    </nav>
+    <main>
+        <div class="content">
+            <form action="">
+                <!-- Resume View Link -->
+                <a href="https://drive.google.com/file/d/1mQCjJ5ROKylNhlGzf4ASdDiTY7llOT5S/view?usp=sharing" target="_blank">
+                    <i class='bx bxs-file'></i> View Resume
+                </a>
+                <!-- Resume Download Link -->
+                <a href="https://drive.google.com/uc?export=download&id=1mQCjJ5ROKylNhlGzf4ASdDiTY7llOT5S" download>
+                    <i class='bx bxs-download'></i> Download Resume
+                </a>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
